@@ -33,7 +33,7 @@ const onEdit = () => {
   <div :class="{ 'p-3': !isReading }">
     <textarea ref="textToAdaptElement" class="textarea mx-2 max-h-full w-full" rows="5" :value="contentToAdapt" :hidden="isReading" @blur="onRead" />
 
-    <div v-if="isReading" class="m-px cursor-pointer hover:outline-1 hover:outline-gray-200 hover:outline" @click="onEdit">
+    <div v-if="isReading" class="m-px cursor-pointer hover:outline hover:outline-1 hover:outline-gray-200" @click="onEdit">
       <slot>
         <!--fallback -->
         <div v-html="contentToAdapt"></div>

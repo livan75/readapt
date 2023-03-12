@@ -12,11 +12,19 @@
   }
 }
 
-.readapt-loading{
+.readapt-extension::after {
+  display: none;
+}
+.readapt-extension::before {
+  display: none;
+}
+
+.readapt-loading {
   overflow: clip !important;
 }
 
 .readapt-loading::after {
+  display: block;
   background-color: rgba(0, 0, 0, 0.4);
   content: "";
   position: fixed;
@@ -28,6 +36,7 @@
 }
 
 .readapt-loading::before {
+  display: block;
   animation: 1.5s linear infinite spinner;
   animation-play-state: inherit;
   border: solid 5px #cfd0d1;

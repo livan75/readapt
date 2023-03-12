@@ -35,7 +35,7 @@ const activeProfile = computed(() => {
 </script>
 
 <template>
-  <div class="mx-auto mt-6 flex max-w-screen-xs flex-wrap gap-4 text-base">
+  <div class="max-w-screen-xs mx-auto mt-6 flex flex-wrap gap-4 text-base">
     <div class="flex w-full justify-between">
       <div><span class="text-3xl">Readapt</span> by</div>
 

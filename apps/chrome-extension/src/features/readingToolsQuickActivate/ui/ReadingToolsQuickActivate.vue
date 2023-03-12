@@ -35,7 +35,7 @@ watch(
 <template>
   <div>
     <div class="text-lg font-semibold">{{ $t('QUICK_ACTIVATE.QUICK_ACTIVATE') }}</div>
-    <div class="mt-2 rounded-lg border border-base-300">
+    <div class="border-base-300 mt-2 rounded-lg border">
       <table class="table w-full">
         <tbody>
           <tr>

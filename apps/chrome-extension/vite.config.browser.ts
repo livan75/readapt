@@ -19,11 +19,9 @@ export default defineConfig({
       imports: [
         'vue',
         {
-          'webextension-polyfill': [
-            ['*', 'browser'],
-          ],
-        },
-      ],
+          'webextension-polyfill': [['*', 'browser']]
+        }
+      ]
     }),
     viteStaticCopy({
       targets: [

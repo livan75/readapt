@@ -24,7 +24,7 @@ const emit = defineEmits<Emits>()
   <label for="reading-tools-form-modal" class="modal cursor-pointer">
     <label class="modal-box relative" for="">
       <label for="reading-tools-form-modal" class="btn-sm btn-circle btn absolute right-2 top-2">✕</label>
-      <div class="mt-6 rounded-lg border border-base-300">
+      <div class="border-base-300 mt-6 rounded-lg border">
         <table class="table w-full">
           <tbody>
             <tr>

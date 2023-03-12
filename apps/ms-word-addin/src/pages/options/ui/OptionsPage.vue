@@ -34,13 +34,13 @@ const { t } = useI18n()
 </script>
 <template>
   <div class="m-auto flex max-h-screen flex-col p-2 text-base">
-    <div class="mb-2 flex items-center bg-base-100">
+    <div class="bg-base-100 mb-2 flex items-center">
       <TextProfileEditDropdown v-model="selectedProfiledId" class="w-60" :settings="settings" />
       <TextProfileRenameButton class="ml-3" :profile-id="selectedProfiledId" />
     </div>
     <TextProfileForm :settings="settings" @update-settings="updateSettings" @change-language="changeLanguage" />
     <div>
-      <TextSettingsAdaptPreview class="my-2 h-40 max-h-20 overflow-scroll tall:max-h-40" :settings="settings" />
+      <TextSettingsAdaptPreview class="tall:max-h-40 my-2 h-40 max-h-20 overflow-scroll" :settings="settings" />
       <div class="mt-auto flex flex-wrap justify-between">
         <TextProfileSaveButton v-model="selectedProfiledId" :settings="settings" />
         <TextProfileDeleteButton v-model="selectedProfiledId" class="ml-3 mr-auto" />

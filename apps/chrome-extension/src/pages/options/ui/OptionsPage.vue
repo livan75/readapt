@@ -38,7 +38,7 @@ const { t } = useI18n()
 </script>
 <template>
   <div class="m-auto max-w-screen-lg p-2 text-base">
-    <div class="mb-2 flex items-center bg-base-100">
+    <div class="bg-base-100 mb-2 flex items-center">
       <div class="mr-4 text-2xl font-semibold">{{ $t('SETTINGS.PROFILE') }}:</div>
       <TextProfileEditDropdown v-model="selectedProfiledId" class="w-60" :settings="settings" />
       <TextProfileRenameButton class="ml-3" :profile-id="selectedProfiledId" />
