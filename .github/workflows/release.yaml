@@ -66,10 +66,15 @@ jobs:
     needs: [lint, build]
     runs-on: macos-latest
     steps:
-      - uses: maxim-lobanov/setup-xcode@v1
-        with:
-          xcode-version: latest-stable
+      # - uses: maxim-lobanov/setup-xcode@v1
+      #   with:
+      #     xcode-version: latest-stable
       - uses: actions/checkout@v3
+      - uses: sinoru/actions-setup-xcode@v2
+        with:
+          xcode-version: '14.3'
+          apple-id: ${{ secrets.APPLE_ID }}
+          apple-id-password: ${{ secrets.APPLE_ID_PASSWORD }}
       - uses: ./.github/actions/package-safari
         with:
           version: ${{ inputs.version }}
